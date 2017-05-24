@@ -26,4 +26,8 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
+    compile 'org.litepal.android:core:1.4.1' //添加LitePal数据库依赖
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'//添加OkHttp依赖进行网络请求
+    compile 'com.google.code.gson:gson:2.7'//添加GSON依赖解析JSON数据
+    compile 'com.github.bumptech.glide:glide:3.7.0'//添加Glide依赖加载和展示图片
 }

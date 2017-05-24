@@ -3,6 +3,8 @@
     package="cn.edu.cqjtu.weatherforecast">
 
     <application
+        android:name="org.litepal.LitePalApplication"
+        <!--使得系统初始化制定的该Application类来获得上下文等资源-->
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
