@@ -1,9 +1,9 @@
 <litepal>
-    <dbname value="weather_forecast"></dbname>
-    <version value="1"></version>
+    <dbname value="weather_forecast"/>
+    <version value="1"/>
     <list>
-        <mapping class="cn.edu.cqjtu.weatherforecast.db.Province"></mapping>
-        <mapping class="cn.edu.cqjtu.weatherforecast.db.City"></mapping>
-        <mapping class="cn.edu.cqjtu.weatherforecast.db.County"></mapping>
+        <mapping class="cn.edu.cqjtu.weatherforecast.db.Province"/>
+        <mapping class="cn.edu.cqjtu.weatherforecast.db.City"/>
+        <mapping class="cn.edu.cqjtu.weatherforecast.db.County"/>
     </list>
 </litepal>
