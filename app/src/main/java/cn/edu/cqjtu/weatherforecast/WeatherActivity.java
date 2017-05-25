@@ -1,5 +1,6 @@
 package cn.edu.cqjtu.weatherforecast;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
@@ -25,6 +26,7 @@ import java.io.IOException;
 
 import cn.edu.cqjtu.weatherforecast.gson.Forecast;
 import cn.edu.cqjtu.weatherforecast.gson.Weather;
+import cn.edu.cqjtu.weatherforecast.service.AutoUpdateService;
 import cn.edu.cqjtu.weatherforecast.util.HttpUtil;
 import cn.edu.cqjtu.weatherforecast.util.Utility;
 import okhttp3.Call;
@@ -205,6 +207,9 @@ public class WeatherActivity extends AppCompatActivity {
         carWashText.setText(carWash);
         sportText.setText(sport);
         weatherLayout.setVisibility(View.VISIBLE);
+
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
     private void loadBingPic(){
         String requestBingPic = "http://guolin.tech/api/bing_pic";
