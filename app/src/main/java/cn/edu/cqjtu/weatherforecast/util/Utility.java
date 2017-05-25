@@ -2,6 +2,8 @@ package cn.edu.cqjtu.weatherforecast.util;
 
 import android.text.TextUtils;
 
+import com.google.gson.Gson;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -9,6 +11,7 @@ import org.json.JSONObject;
 import cn.edu.cqjtu.weatherforecast.db.City;
 import cn.edu.cqjtu.weatherforecast.db.County;
 import cn.edu.cqjtu.weatherforecast.db.Province;
+import cn.edu.cqjtu.weatherforecast.gson.Weather;
 
 /**
  * Created by mySys on 2017/5/24.
@@ -55,7 +58,7 @@ public class Utility {
         }
         return false;
     }
-    
+
     public static boolean handleCountyResponse(String response, int cityId) {
         if (!TextUtils.isEmpty(response)) {
             try {
@@ -74,5 +77,17 @@ public class Utility {
             }
         }
         return false;
+    }
+
+    public static Weather handleWeatherResponse(String response) {
+        try {
+            JSONObject jsonObject = new JSONObject(response);
+            JSONArray jsonArray = jsonObject.getJSONArray("HeWeather");
+            String weatherContent = jsonArray.getJSONObject(0).toString();
+            return new Gson().fromJson(weatherContent, Weather.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
