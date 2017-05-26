@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorButtonNormal"
+        android:text="工具"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:columnCount="3"
+        app:rowCount="3">
+
+        <ImageButton
+            android:id="@+id/tool_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#fff"
+            android:scaleType="centerInside" />
+        <ImageButton
+            android:id="@+id/tool_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#fff"
+            android:scaleType="centerInside"/>
+        <ImageButton
+            android:id="@+id/tool_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#fff"
+            android:scaleType="centerInside"/>
+        <ImageButton
+            android:id="@+id/tool_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#fff"
+            android:scaleType="centerInside"/>
+        <ImageButton
+            android:id="@+id/tool_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#fff"
+            android:scaleType="centerInside"/>
+        <ImageButton
+            android:id="@+id/tool_6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#fff"
+            android:scaleType="centerInside"/>
+        <ImageButton
+            android:id="@+id/tool_7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#fff"
+            android:scaleType="centerInside"/>
+        <ImageButton
+            android:id="@+id/tool_8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#fff"
+            android:scaleType="centerInside"/>
+        <ImageButton
+            android:id="@+id/tool_9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:background="#fff"
+            android:scaleType="centerInside"/>
+
+    </android.support.v7.widget.GridLayout>
+
+
+    <include layout="@layout/bottom" />
+
+</LinearLayout>

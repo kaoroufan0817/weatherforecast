@@ -19,6 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".WeatherActivity" />
+        <activity android:name=".ToolActivity" />
+        <activity android:name=".ChooseToolActivity"
+            android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name=".RobotActivity" />
 
         <service
             android:name=".service.AutoUpdateService"

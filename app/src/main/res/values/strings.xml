@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">天气预报</string>
+    <string name="send">发送</string>
+    <string-array name="welcome_tips">
+        <item>Welcome~~</item>
+        <item>It is a long time since we met last time.</item>
+        <item>Nice to meet you!</item>
+        <item>Commander,sir!</item>
+    </string-array>
 </resources>
