@@ -43,8 +43,8 @@ public class ChooseToolActivity extends Activity {
         for (int i = 0; i < 2; i++) {
             Tool assistant = new Tool("机器人助手", R.drawable.assistant,1);
             toolList.add(assistant);
-            Tool test1 = new Tool("Banana", R.drawable.ic_home,2);
-            toolList.add(test1);
+            Tool location = new Tool("地图位置", R.drawable.location,2);
+            toolList.add(location);
             Tool test2 = new Tool("Orange", R.drawable.ic_home,3);
             toolList.add(test2);
         }

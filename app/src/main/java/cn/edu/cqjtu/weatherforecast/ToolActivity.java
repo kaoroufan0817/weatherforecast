@@ -243,7 +243,7 @@ public class ToolActivity extends AppCompatActivity {
                 imageButton.setImageDrawable(getResources().getDrawable(R.drawable.assistant));
             }
             else if(num == 2){
-                imageButton.setImageDrawable(getResources().getDrawable(R.drawable.weather_button));
+                imageButton.setImageDrawable(getResources().getDrawable(R.drawable.location));
             }
             else if(num == 3){}
             else if(num == 4){}
@@ -263,7 +263,8 @@ public class ToolActivity extends AppCompatActivity {
                 Intent intent = new Intent(ToolActivity.this, RobotActivity.class);
                 startActivity(intent);
             } else if (num == 2) {
-
+                Intent intent = new Intent(ToolActivity.this, LBSActivity.class);
+                startActivity(intent);
             } else if (num == 3) {
 
             } else if (num == 4) {
